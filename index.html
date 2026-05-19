@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="萌宠洗护 — 高端宠物洗护预约，猫咪狗狗洗澡、美容与基础护理">
-  <title>萌宠洗护 · 高端宠物洗护预约</title>
+  <meta name="description" content="萌宠洗护 · 高端宠物洗护预约">
+  <title>萌宠洗护 · 首页</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -12,168 +12,96 @@
 </head>
 <body>
   <div class="page">
-    <header class="header" id="header">
-      <a href="#hero" class="brand">
-        <span class="brand-logo" aria-hidden="true">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="16" cy="10" r="5" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M8 18c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M5 14c-1.5 0-2.5 1-2.5 2.5M27 14c1.5 0 2.5 1 2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M6 22c-1 2 1 4 3 4M26 22c1 2-1 4-3 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <span class="brand-text">
-          <span class="brand-name">萌宠洗护</span>
-          <span class="brand-en">PET CARE</span>
-        </span>
-      </a>
+    <header class="header">
+      <a href="index.html" class="brand page-link"><span class="brand-logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="10" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M8 18c0-4 3.5-7 8-7s8 3 8 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M5 14c-1.5 0-2.5 1-2.5 2.5M27 14c1.5 0 2.5 1 2.5 2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M6 22c-1 2 1 4 3 4M26 22c1 2-1 4-3 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span><span class="brand-text"><span class="brand-name">萌宠洗护</span><span class="brand-en">PET CARE</span></span></a>
       <div class="header-actions">
-        <a href="#booking" class="btn btn-nav">立即预约</a>
-        <button type="button" class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false">
-          <span></span><span></span>
-        </button>
+        <a href="booking.html" class="btn btn-nav page-link">立即预约</a>
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="打开菜单" aria-expanded="false"><span></span><span></span></button>
       </div>
     </header>
     <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <a href="#services">服务项目</a>
-      <a href="#environment">洗护环境</a>
-      <a href="#process">安心流程</a>
-      <a href="#pricing">价格参考</a>
-      <a href="#booking">快速预约</a>
-      <a href="#contact">联系我们</a>
+      <a href="services.html" class="page-link">服务与价格</a>
+      <a href="environment.html" class="page-link">洗护环境</a>
+      <a href="reviews.html" class="page-link">客户评价</a>
+      <a href="booking.html" class="page-link">立即预约</a>
     </nav>
     <div class="nav-overlay" id="navOverlay"></div>
     <main>
-      <section class="hero section" id="hero">
-        <h1 class="hero-title">让毛孩子，<br>安心变干净</h1>
-        <p class="hero-subtitle">高端宠物洗护预约<br>猫咪 / 狗狗洗澡、美容、修毛与基础护理</p>
-        <div class="hero-actions">
-          <a href="#booking" class="btn btn-primary">立即预约洗护</a>
-          <a href="#pricing" class="link-secondary">查看价格</a>
+      <section class="hero section reveal">
+        <div class="hero-media">
+          <img class="hero-poster-fallback media-img" src="assets/hero-poster.jpg" alt="" width="800" height="600">
+          <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg">
+            <source src="assets/hero-grooming.mp4" type="video/mp4">
+          </video>
         </div>
-        <figure class="hero-visual">
-          <div class="media-frame media-frame--hero">
-            <img src="assets/hero-dog.jpg" alt="宠物洗护后干净可爱的狗狗，专业洗护空间" class="media-img" width="800" height="600" loading="eager">
-          </div>
-        </figure>
-        <ul class="hero-features">
-          <li><span class="feature-dot"></span>一宠一护</li>
-          <li><span class="feature-dot"></span>流程透明</li>
-          <li><span class="feature-dot"></span>支持预约</li>
+        <h1 class="hero-title">让毛孩子，<br>安心变干净</h1>
+        <p class="hero-tagline">专业宠物洗护 · 猫咪狗狗洗澡、美容与基础护理</p>
+        <ul class="advantage-list">
+          <li><span class="dot"></span>一宠一护</li>
+          <li><span class="dot"></span>流程透明</li>
+          <li><span class="dot"></span>支持预约</li>
         </ul>
       </section>
-      <section class="section" id="services">
-        <h2 class="section-title">我们的服务</h2>
-        <div class="card-grid service-grid">
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 14h14a2 2 0 002-2v-1H3v1a2 2 0 002 2z"/><path d="M7 14v3a2 2 0 002 2h6a2 2 0 002-2v-3"/><path d="M9 11V9a3 3 0 016 0v2"/><circle cx="8" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="11" cy="5.5" r="0.8" fill="currentColor" stroke="none"/></svg>
-            </div>
-            <h3>日常洗护</h3><p>深层清洁，温和护理</p>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="6" cy="6" r="2.5"/><path d="M8.5 7.5l8 8"/><path d="M14 5l2-2M18 9l2-2"/></svg>
-            </div>
-            <h3>造型美容</h3><p>修剪造型，提升颜值</p>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4c-3 0-5 2.5-5 5.5 0 3 2 5.5 5 7.5 3-2 5-4.5 5-7.5C17 6.5 15 4 12 4z"/><circle cx="9.5" cy="10" r="0.8" fill="currentColor" stroke="none"/><circle cx="14.5" cy="10" r="0.8" fill="currentColor" stroke="none"/><path d="M10 12.5c.8.8 2.2.8 3 0"/></svg>
-            </div>
-            <h3>猫咪专护</h3><p>温柔安抚，减少应激</p>
-          </article>
-          <article class="card service-card">
-            <div class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="9" y="3" width="6" height="12" rx="2"/><path d="M10 7h4M10 10h4"/><path d="M12 15v2"/><path d="M7 19c1-1.2 2.5-2 5-2s4 .8 5 2"/></svg>
-            </div>
-            <h3>单项护理</h3><p>耳部清洁，修甲护理</p>
-          </article>
-        </div>
+      <section class="section reveal">
+        <a href="services.html" class="card entry-card page-link">
+          <h3>服务与价格</h3>
+          <p>日常洗护 · 造型美容 · 猫咪专护</p>
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
+        <a href="environment.html" class="card entry-card page-link">
+          <h3>洗护环境</h3>
+          <p>洗护区 · 美容区 · 等候区</p>
+          <span class="arrow" aria-hidden="true">›</span>
+        </a>
       </section>
-      <section class="section section-env" id="environment">
-        <h2 class="section-title">洗护环境</h2>
-        <p class="section-desc">干净、透明、安心，让主人更放心。</p>
-        <div class="env-gallery">
-          <figure class="env-item env-item-large">
-            <div class="media-frame media-frame--env-wide"><img src="assets/grooming-room.jpg" alt="宠物洗护区" class="media-img" width="900" height="560"></div>
-            <figcaption class="env-tag">洗护区</figcaption>
-          </figure>
-          <figure class="env-item env-item-small">
-            <div class="media-frame media-frame--env-square"><img src="assets/beauty-area.jpg" alt="宠物美容区" class="media-img" width="400" height="400"></div>
-            <figcaption class="env-tag">美容区</figcaption>
-          </figure>
-          <figure class="env-item env-item-small">
-            <div class="media-frame media-frame--env-square"><img src="assets/waiting-area.jpg" alt="温馨等候区" class="media-img" width="400" height="400"></div>
-            <figcaption class="env-tag">等候区</figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class="section" id="process">
-        <h2 class="section-title">安心流程</h2>
-        <ol class="process-list">
-          <li class="process-step"><span class="process-num">01</span><div class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h10M4 18h6"/></svg></div><div class="process-text"><h3>预约沟通</h3><p>了解宠物情况，贴心安排</p></div></li>
-          <li class="process-step"><span class="process-num">02</span><div class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="M16 16l4 4"/></svg></div><div class="process-text"><h3>到店检查</h3><p>确认毛发状态与护理需求</p></div></li>
-          <li class="process-step"><span class="process-num">03</span><div class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v4M8 6l-2 2M16 6l2 2"/></svg></div><div class="process-text"><h3>温柔洗护</h3><p>专业洗护，细致呵护</p></div></li>
-          <li class="process-step"><span class="process-num">04</span><div class="process-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 13l4 4L19 7"/></svg></div><div class="process-text"><h3>完成接宠</h3><p>洗护完成后通知接回</p></div></li>
-        </ol>
-      </section>
-      <section class="section section-review" id="reviews">
+      <section class="section reveal">
         <h2 class="section-title">客户评价</h2>
-        <article class="card review-card">
-          <div class="review-header">
-            <div class="media-frame media-frame--avatar"><img src="assets/customer-dog.jpg" alt="" class="media-img" width="96" height="96"></div>
-            <div class="review-meta"><span class="review-name">小丸子的妈妈</span><div class="review-stars" aria-label="五星好评">★★★★★</div></div>
+        <div class="carousel" data-carousel data-autoplay="6000">
+          <div class="carousel-viewport"><div class="carousel-track">
+              <div class="carousel-slide">
+                <article class="card review-card-mini">
+                  <div class="review-header">
+                    <div class="media-frame media-frame--avatar"><img src="assets/review-1.jpg" alt="" class="media-img"></div>
+                    <div><span class="review-name">小丸子的妈妈</span><div class="review-stars">★★★★★</div></div>
+                  </div>
+                  <p class="review-content">环境很干净，店员会慢慢安抚狗狗，洗完毛发蓬松柔软，整个过程很安心。</p>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="card review-card-mini">
+                  <div class="review-header">
+                    <div class="media-frame media-frame--avatar"><img src="assets/review-2.jpg" alt="" class="media-img"></div>
+                    <div><span class="review-name">豆豆爸</span><div class="review-stars">★★★★★</div></div>
+                  </div>
+                  <p class="review-content">猫咪洗护很温柔，等候区也很舒适，会再来。</p>
+                </article>
+              </div>
+
+              <div class="carousel-slide">
+                <article class="card review-card-mini">
+                  <div class="review-header">
+                    <div class="media-frame media-frame--avatar"><img src="assets/review-3.jpg" alt="" class="media-img"></div>
+                    <div><span class="review-name">奶茶妈</span><div class="review-stars">★★★★★</div></div>
+                  </div>
+                  <p class="review-content">修毛造型很自然，价格透明，预约方便。</p>
+                </article>
+              </div>
+
+          </div></div>
+          <div class="carousel-nav">
+            <button type="button" class="carousel-btn carousel-btn--prev" aria-label="上一张">‹</button>
+            <div class="carousel-dots"></div>
+            <button type="button" class="carousel-btn carousel-btn--next" aria-label="下一张">›</button>
           </div>
-          <p class="review-content">环境很干净，店员会慢慢安抚狗狗，洗完毛发蓬松柔软，整个过程很安心。</p>
-        </article>
-      </section>
-      <section class="section section-pricing" id="pricing">
-        <h2 class="section-title">价格参考</h2>
-        <p class="section-desc">预约前可发送宠物照片，获取专属报价。</p>
-        <div class="card-grid pricing-grid">
-          <article class="card pricing-card"><span class="pricing-label">小型犬洗护</span><span class="pricing-amount">¥88<span class="pricing-suffix">起</span></span></article>
-          <article class="card pricing-card"><span class="pricing-label">中型犬洗护</span><span class="pricing-amount">¥128<span class="pricing-suffix">起</span></span></article>
-          <article class="card pricing-card"><span class="pricing-label">大型犬洗护</span><span class="pricing-amount">¥188<span class="pricing-suffix">起</span></span></article>
-          <article class="card pricing-card"><span class="pricing-label">猫咪专护</span><span class="pricing-amount">¥168<span class="pricing-suffix">起</span></span></article>
         </div>
-        <div class="pricing-cta-wrap"><a href="#booking" class="btn btn-secondary">发送宠物照片询价</a></div>
+        <p class="section-link-wrap"><a href="reviews.html" class="link-secondary page-link">查看全部评价</a></p>
       </section>
-      <section class="section section-booking" id="booking">
-        <div class="booking-card card">
-          <header class="booking-card-header">
-            <h2 class="booking-card-title">快速预约</h2>
-            <p class="booking-card-desc">留下信息，我们会尽快与您确认预约时间。</p>
-          </header>
-          <form class="booking-form" id="bookingForm" novalidate>
-            <div class="form-group"><label for="petType">宠物类型</label><select id="petType" name="petType" required><option value="" disabled selected>请选择</option><option value="dog-small">小型犬</option><option value="dog-medium">中型犬</option><option value="dog-large">大型犬</option><option value="cat">猫咪</option><option value="other">其他</option></select></div>
-            <div class="form-group"><label for="serviceType">服务项目</label><select id="serviceType" name="serviceType" required><option value="" disabled selected>请选择</option><option value="wash">日常洗护</option><option value="groom">造型美容</option><option value="cat-care">猫咪专护</option><option value="single">单项护理</option></select></div>
-            <div class="form-group"><label for="bookingDate">预约日期</label><input type="date" id="bookingDate" name="bookingDate" required></div>
-            <div class="form-group"><label for="phone">联系电话</label><input type="tel" id="phone" name="phone" placeholder="请输入手机号" required inputmode="tel" autocomplete="tel"></div>
-            <div class="form-group"><label for="remark">备注</label><input type="text" id="remark" name="remark" placeholder="宠物品种、特殊需求等（选填）"></div>
-            <button type="submit" class="btn btn-primary btn-submit">提交预约信息</button>
-          </form>
-        </div>
-      </section>
-      <section class="section section-contact" id="contact">
-        <h2 class="section-title">联系我们</h2>
-        <div class="contact-info card">
-          <p><span class="contact-label">营业时间</span>10:00 — 20:00</p>
-          <p><span class="contact-label">电话</span><a href="tel:4008882026">400-888-2026</a></p>
-          <p><span class="contact-label">地址</span>星河路88号</p>
-          <div class="wechat-qr"><div class="qr-placeholder" aria-hidden="true"><svg viewBox="0 0 80 80" fill="none"><rect x="8" y="8" width="24" height="24" rx="2" stroke="currentColor" stroke-width="1.5"/></svg></div><span class="qr-caption">扫码添加微信预约</span></div>
-        </div>
+      <section class="section section-cta reveal">
+        <a href="booking.html" class="btn btn-primary page-link">立即预约洗护</a>
       </section>
     </main>
     <footer class="footer"><p>用心呵护每一只毛孩子</p></footer>
-  </div>
-  <div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-content card">
-      <p class="modal-title" id="modalTitle">预约已提交</p>
-      <p class="modal-text">已收到预约信息，我们会尽快与您确认</p>
-      <button type="button" class="btn btn-primary btn-block" id="modalClose">好的</button>
-    </div>
   </div>
   <script src="script.js"></script>
 </body>
